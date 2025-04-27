@@ -4,10 +4,10 @@ import { ImagesSlider } from "../ui/images-slider";
 
 const OurNewsletter = () => {
   const images = [
-    "/images/inquisitor/issue18.png",
-    "/images/inquisitor/issue17.jpeg",
-    "/images/inquisitor/issue16.jpg",
-    "/images/inquisitor/issue15.png",
+    "images/inquisitor/issue18.png",
+    "images/inquisitor/issue17.jpeg",
+    "images/inquisitor/issue16.jpg",
+    "images/inquisitor/issue15.png",
   ];
 
   return (
