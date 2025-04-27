@@ -21,3 +21,13 @@
     100% { opacity: 1; transform: translate3d(0, 0, 0); }
   }
 }
+
+.custom-bullet {
+  background-color: #e6ba63 !important;
+  opacity: 0.5;
+}
+.custom-bullet-active {
+  background-color: #e6ba63 !important;
+  opacity: 1;
+}
+
