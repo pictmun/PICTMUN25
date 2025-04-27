@@ -17,13 +17,13 @@ const Navbar = () => {
               <Image 
                 src="/logos/golden-logo.webp"
                 alt="logo"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 priority={true}
               />
             </Link>
           </div>
-          <div className="hidden sm:ml-6 sm:flex sm:items-center text-gold text-sm font-playfair">
+          <div className="hidden sm:ml-6 sm:flex sm:items-center text-gold text-lg font-playfair">
             <Link
               href="/"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
@@ -59,6 +59,18 @@ const Navbar = () => {
               className="px-3 py-2 rounded-md hover:text-dull_gold"
             >
               Team
+            </Link>
+            <Link
+              href="/team"
+              className="px-3 py-2 rounded-md hover:text-dull_gold"
+            >
+              Timeline
+            </Link>
+            <Link
+              href="/team"
+              className="px-3 py-2 rounded-md hover:text-dull_gold"
+            >
+              Sponsors
             </Link>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">

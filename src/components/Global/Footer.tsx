@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#232A2F] text-white">
+    <footer className="bg-[#232A2F] text-white mt-8 border-t border-gray-700 pt-8 mx-6">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -31,11 +31,6 @@ const Footer = () => {
             <p className="font-montserrat text-sm">Email: info@example.com</p>
             <p className="font-montserrat text-sm">Phone: (123) 456-7890</p>
           </div>
-        </div>
-        <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-          <p className="font-montserrat text-sm">
-            &copy; {new Date().getFullYear()} Your Company. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>

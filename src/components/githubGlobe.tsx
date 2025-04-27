@@ -26,7 +26,7 @@ export function GithubGlobe() {
     arcLength: 0.9,
     rings: 1,
     maxRings: 3,
-    initialPosition: { lat: 22.3193, lng: 114.1694 },
+    initialPosition: { lat: 77.837450799474553, lng: 35.494009507787759 },
     autoRotate: true,
     autoRotateSpeed: 0.5,
   };
