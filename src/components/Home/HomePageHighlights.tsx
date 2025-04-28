@@ -10,61 +10,61 @@ const HomePageHighlights = () => {
         id: 1,
         title: "Highlight 1",
         description: "This is the Highlight 1.",
-        image: "images/home/IMG_1525.JPG",
+        image: "images/Home/IMG_1525.JPG",
       },
       {
         id: 2,
         title: "Highlight 2",
         description: "This is the Highlight 2.",
-        image: "images/home/IMG_1532.JPG", 
+        image: "images/Home/IMG_1532.JPG", 
       },
       {
         id: 3,
         title: "Highlight 3",
         description: "This is the Highlight 3.",
-        image: "images/home/IMG_1564.JPG",
+        image: "images/Home/IMG_1564.JPG",
       },
     {
         id: 4,
         title: "Highlight 4",
         description: "This is the Highlight 4.",
-        image: "images/home/IMG_1741.JPG",
+        image: "images/Home/IMG_1741.JPG",
       },
       {
         id: 5,
         title: "Highlight 5",
         description: "This is the Highlight 5.",
-        image: "images/home/IMG_1758.JPG",
+        image: "images/Home/IMG_1758.JPG",
       },
     {
         id: 6,
         title: "Highlight 6",
         description: "This is the Highlight 6.",
-        image: "images/home/IMG_4866.jpg",
+        image: "images/Home/IMG_4866.jpg",
       },
       {
         id: 7,
         title: "Highlight 7",
         description: "This is the Highlight 7.",
-        image: "images/home/IMG_5089.jpg", 
+        image: "images/Home/IMG_5089.jpg", 
       },
     {
         id: 8,
         title: "Highlight 8",
         description: "This is the Highlight 8.",
-        image: "images/home/IMG_7178.jpg", 
+        image: "images/Home/IMG_7178.jpg", 
       },
       {
         id: 9,
         title: "Highlight 9",
         description: "This is the Highlight 9.",
-        image: "images/home/IMG_9999.jpg",
+        image: "images/Home/IMG_9999.jpg",
       },
       {
         id: 10,
         title: "Highlight 10",
         description: "This is the Highlight 10.",
-        image: "images/home/ptk.jpg", 
+        image: "images/Home/ptk.jpg", 
       },
   ]
   return (
@@ -110,8 +110,8 @@ const HomePageHighlights = () => {
             </SwiperSlide>
           ))}
           {/* Navigation buttons */}
-          <div className="swiper-button-next hidden lg:block" style={{ color: '#e6ba63' }}></div>
-          <div className="swiper-button-prev hidden lg:block" style={{ color: '#e6ba63' }}></div>
+          {/* <div className="swiper-button-next hidden lg:block" style={{ color: '#e6ba63' }}></div>
+          <div className="swiper-button-prev hidden lg:block" style={{ color: '#e6ba63' }}></div> */}
         </Swiper>
     </div>
   )

@@ -34,7 +34,7 @@ const AboutClub = () => {
 
         <div className="col-span-1 w-full h-fit flex justify-center" data-aos="fade-up" data-aos-delay="200">
           <Image
-            src="/images/home/about_the_club.JPG"
+            src="/images/Home/IMG_1447.JPG"
             height={350}
             width={500}
             alt="about"
