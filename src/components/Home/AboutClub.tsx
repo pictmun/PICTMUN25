@@ -1,4 +1,4 @@
-"use client"; // If you are using Next.js app router
+"use client"; 
 import { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";

@@ -1,4 +1,7 @@
 import BookCard from "@/components/inquisitor/BookCard";
+import TailwindButton from "@/components/ui/tailwindcss-button";
+import Image from "next/image";
+import Link from "next/link";
 export default function Page() {
     const books = [
         { imgSrc: 'images/inquisitor/Issue17.jpeg', title: 'Issue 17.0 September 2024',dlink:'/inquisitor/Newsletter_Issue17.0.pdf' },
@@ -20,34 +23,30 @@ export default function Page() {
         { imgSrc: 'images/inquisitor/issue1.jpg', title: 'Issue 1.0 June 2020',dlink:'/inquisitor/Newsletter_Issue1.0.pdf' },
     ];
     return (
-        <section className="pt-24 bg-darkblue min-h-screen">
-            <h1 className="text-5xl mb-20 text-center font-bold text-white">Our Newsletter - Inquisitor</h1>
-            <div className="bg-white/30 w-[90%] lg:w-[75%] rounded-xl p-10 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
+        <section className="pt-24 bg-darkblue min-h-screen font-playfair">
+            <h1 className="text-5xl mb-20 text-center font-bold text-gold">Our Newsletter - Inquisitor</h1>
+            <div className="bg-blue-dull/50 w-[90%] lg:w-[75%] rounded-xl p-2 md:p-10 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div>
-                    <img src="images/inquisitor/Issue18.png" className="w-full h-[400px] object-contain" alt="" />
+                    <Image src={'/images/inquisitor/Issue18.png'} height={400} width={300} className="object-contain mx-auto rounded-xl" alt="Issue 18" />
                 </div>
                 <div>
-                    <p className="text-base lg:text-base m-5 text-darkblue text-justify">
+                    <p className="text-base lg:text-lg m-5 text-slate-200 text-left">
                     The 18th edition of PICT MUN&#39;s newsletter “The Inquisitor” was published digitally, featuring 6 articles with topics brewing from the recently conducted Lok Sabha elections, the comparison of the Belt and Road Initiative of China (BRI) and the newly established India Middle East Economic Corridor (IMEC) and the how modernization has helped improve the infrastructure in the Indian Army owing to the expansion of army into creating specialist in technological fields. It also features a special section featuring a deeper look into the range of MP&#39;s elected, evaluating them based on parameters such as economic and linguistic standpoints.
                     
                     </p>
                     <div className="flex flex-col lg:flex-row mt-3 items-center justify-center gap-4">
-                        <a
+                      <Link
                         href='/inquisitor/Newsletter_Issue18.0.pdf'
-                        download
+                        download={true}
                         >
-
-                        <button className="px-12 text-skin py-2 text-md rounded-md bg-zinc-950 bg-opacity-80 border-[1.5px] border-zinc-950 shadow-lg transition-all duration-300 ease-in-out hover:bg-opacity-100 hover:shadow-xl hover:scale-105">
-                            Download
-                        </button>
-                        </a>
-                        <a
+                            <TailwindButton text="Download" cls="px-8 py-1"/>
+                      </Link>
+                      <Link
                         href='/inquisitor/Newsletter_Issue18.0.pdf'
+                        target="_blank"
                         >
-                        <button className="px-12 text-white py-2 text-md rounded-md bg-zinc-950 bg-opacity-80 border-[1.5px] border-zinc-950 shadow-lg transition-all duration-300 ease-in-out hover:bg-opacity-100 hover:shadow-xl hover:scale-105">
-                            Read Online
-                        </button>
-                        </a>
+                            <TailwindButton text="Read Online" cls="px-8 py-1"/>
+                      </Link>
                     </div>
                 </div>
             </div>

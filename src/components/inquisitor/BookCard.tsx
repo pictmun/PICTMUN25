@@ -1,4 +1,10 @@
-import React from "react";
+"use client"; 
+import { useEffect } from "react";
+import TailwindButton from "../ui/tailwindcss-button";
+import Link from "next/link";
+import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface BookCardProps {
     imgSrc: string;
@@ -7,25 +13,32 @@ interface BookCardProps {
 }
 
 const BookCard: React.FC<BookCardProps> = ({ imgSrc, title, dlink}) => {
+    useEffect(() => {
+        AOS.init({
+          once: true,       // Animate only once
+          duration: 800,    // Duration in ms (overrideable per element too)
+          easing: "ease-in-out", // Easing function
+        });
+    }, []);
     return (
-        <div className="flex flex-col items-center gap-2.5 justify-center py-5">
+        <div className="flex flex-col items-center gap-2.5 justify-center py-5" data-aos="fade-up">
             <div>
-                <img
-                    src={imgSrc}
+                <Image
+                    src={`/${imgSrc}`}
                     alt="inquistor"
-                    className="h-[250px] w-[200px] object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+                    height={250}
+                    width={200}
+                    className="object-cover transition-transform duration-300 ease-in-out hover:scale-105 rounded-2xl"
                 />
             </div>
             <div className="flex items-center justify-center gap-2 px-3">
-                <p className="w-1/2 text-white">{title}</p>
-                <a
-                href={dlink}
-                download
+                <p className="w-1/2 text-slate-200">{title}</p>
+                <Link
+                href='/inquisitor/Newsletter_Issue18.0.pdf'
+                download={true}
                 >
-                <button className="px-2 text-skin py-2 text-md rounded-md bg-zinc-950 bg-opacity-60 border-[1.5px] border-zinc-950 shadow-lg transition-all duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-xl hover:scale-105">
-                    Download
-                </button>
-                </a>
+                    <TailwindButton text="Download" cls="px-3 text-xs md:text-base "/>
+                </Link>
             </div>
         </div>
     );
