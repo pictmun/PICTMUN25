@@ -68,7 +68,7 @@ const HomePageHighlights = () => {
       },
   ]
   return (
-    <div className=" bg-blue-dull md:p-8 font-playfair">
+    <div className=" bg-blue-dull p-8 font-playfair">
       <div className="text-center relative my-6" data-aos="fade-up">
         <h1 className="text-3xl lg:text-4xl text-gold">Highlights</h1>
       </div>

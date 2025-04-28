@@ -30,7 +30,7 @@ const Landing = () => {
             className="md:hidden block"
           />
           <p className="text-6xl md:text-9xl pointer-events-none">PICT MUN</p>
-          <p className="text-xl md:text-4xl pointer-events-none">Think Discuss Prosper</p>
+          <p className="text-xl md:text-4xl pointer-events-none">Think • Discuss • Prosper</p>
           <Link target="_blank" href={"https://linktr.ee/pictmun"}>
             <TailwindButton text="Register" cls="px-8 py-1"/>
           </Link>
