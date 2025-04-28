@@ -13,12 +13,15 @@
   --color-blue-dull: #232A2F;
   --color-gold: #e6ba63;
   --color-dull_gold: #C29B46;
+  --animate-marquee: marquee 10s linear infinite
+}
 
-  --animate-fade-in-up: fade-in-up 1s ease-in;
-
-  @keyframes fade-in-up {
-    0% { opacity: 0; transform: translate3d(0, 100%, 0); }
-    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 

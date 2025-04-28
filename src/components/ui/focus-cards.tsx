@@ -25,6 +25,7 @@ export const Card = React.memo(
     >
       <img
         src={`https://drive.google.com/thumbnail?id=${card.id}&sz=w1000`}
+        referrerPolicy="no-referrer"
         alt={card.name?.split('.')[0]}
         className="object-cover absolute inset-0 h-full w-full"
       />

@@ -36,7 +36,7 @@ export default function TeamGallery() {
     const fetchFolders = async () => {
       setLoadingFolders(true);
       try {
-        const res = await fetch("/api/gallery/");
+        const res = await fetch("/api/team/");
         const data = await res.json();
 
         const sortedFolders = (data.folders || []).sort((a: Folder, b: Folder) => {
@@ -85,7 +85,7 @@ export default function TeamGallery() {
     setFiles([]);
 
     try {
-      const res = await fetch("/api/gallery/", {
+      const res = await fetch("/api/team/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ folderId }),
