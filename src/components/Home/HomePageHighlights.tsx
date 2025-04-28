@@ -68,7 +68,7 @@ const HomePageHighlights = () => {
       },
   ]
   return (
-    <div className=" bg-blue-dull p-8 font-playfair">
+    <div className=" bg-blue-dull md:p-8 font-playfair">
       <div className="text-center relative my-6" data-aos="fade-up">
         <h1 className="text-3xl lg:text-4xl text-gold">Highlights</h1>
       </div>
@@ -104,7 +104,7 @@ const HomePageHighlights = () => {
         >
           {highlights.map((highlight) => (
             <SwiperSlide key={highlight.id}>
-              <div className="relative rounded-lg overflow-hidden shadow-lg mx-auto">
+              <div className="relative rounded-xl overflow-hidden shadow-lg mx-auto">
                 <img src={highlight.image} alt={highlight.title} className="w-full h-64 object-cover" /> 
               </div>
             </SwiperSlide>
