@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X} from "lucide-react"
@@ -7,7 +6,7 @@ import Image from "next/image"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-
+  
   return (
     <nav className="bg-[#232A2F] shadow-lg fixed w-full z-50">
       <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -23,7 +22,7 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <div className="hidden sm:ml-6 sm:flex sm:items-center text-gold text-lg font-playfair">
+          <div className="hidden sm:ml-6 md:flex sm:items-center text-gold text-lg font-playfair">
             <Link
               href="/"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
@@ -31,13 +30,13 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/about"
+              href="/About"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
             >
               About
             </Link>
             <Link
-              href="/events"
+              href="/About/#Events"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
             >
               Events
@@ -49,34 +48,34 @@ const Navbar = () => {
               Inquisitor
             </Link>
             <Link
-              href="/gallery"
+              href="/Gallery"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
             >
               Gallery
             </Link>
             <Link
-              href="/team"
+              href="/Team"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
             >
               Team
             </Link>
             <Link
-              href="/team"
+              href="/Timeline"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
             >
               Timeline
             </Link>
             <Link
-              href="/team"
+              href="/Sponsors"
               className="px-3 py-2 rounded-md hover:text-dull_gold"
             >
               Sponsors
             </Link>
           </div>
-          <div className="-mr-2 flex items-center sm:hidden">
+          <div className="-mr-2 flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gold hover:text-blue-dull hover:bg-dull_gold "
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
@@ -90,25 +89,55 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="sm:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1 text-lg font-playfair" onClick={()=> setIsOpen(false)}>
             <Link
               href="/"
-              className="block px-3 py-2 rounded-md text-base font-montserrat font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
             >
               Home
             </Link>
             <Link
-              href="/about"
-              className="block px-3 py-2 rounded-md text-base font-montserrat font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              href="/About"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
             >
               About
             </Link>
             <Link
-              href="/contact"
-              className="block px-3 py-2 rounded-md text-base font-montserrat font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              href="/About/#Events"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
             >
-              Contact
+              Events
+            </Link>
+            <Link
+              href="/Inquisitor"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
+            >
+              Inquisitor
+            </Link>
+            <Link
+              href="/Gallery"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
+            >
+              Gallery
+            </Link>
+            <Link
+              href="/Team"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
+            >
+              Team
+            </Link>
+            <Link
+              href="/Timeline"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
+            >
+              Timeline
+            </Link>
+            <Link
+              href="/Sponsors"
+              className="block px-3 py-2 rounded-md font-medium text-gold hover:text-blue-dull hover:bg-dull_gold"
+            >
+              Sponsors
             </Link>
           </div>
         </div>

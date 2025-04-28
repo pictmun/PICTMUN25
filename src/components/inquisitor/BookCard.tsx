@@ -10,9 +10,10 @@ interface BookCardProps {
     imgSrc: string;
     title: string;
     dlink: string;
+    delay: number;
 }
 
-const BookCard: React.FC<BookCardProps> = ({ imgSrc, title, dlink}) => {
+const BookCard: React.FC<BookCardProps> = ({ imgSrc, title, dlink, delay}) => {
     useEffect(() => {
         AOS.init({
           once: true,       // Animate only once
@@ -21,7 +22,7 @@ const BookCard: React.FC<BookCardProps> = ({ imgSrc, title, dlink}) => {
         });
     }, []);
     return (
-        <div className="flex flex-col items-center gap-2.5 justify-center py-5" data-aos="fade-up">
+        <div className="flex flex-col items-center gap-2.5 justify-center py-5" data-aos="fade-up" data-aos-delay={`${delay}`}>
             <div>
                 <Image
                     src={`/${imgSrc}`}

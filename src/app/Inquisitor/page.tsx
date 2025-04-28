@@ -23,7 +23,7 @@ export default function Page() {
         { imgSrc: 'images/inquisitor/issue1.jpg', title: 'Issue 1.0 June 2020',dlink:'/inquisitor/Newsletter_Issue1.0.pdf' },
     ];
     return (
-        <section className="pt-24 bg-darkblue min-h-screen font-playfair">
+        <section className="pt-24 min-h-screen font-playfair">
             <h1 className="text-5xl mb-20 text-center font-bold text-gold">Our Newsletter - Inquisitor</h1>
             <div className="bg-blue-dull/50 w-[90%] lg:w-[75%] rounded-xl p-2 md:p-10 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
                 <div>
@@ -53,7 +53,7 @@ export default function Page() {
 
             <div className="mt-20 grid w-[90%] lg:w-[75%] gap-6 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-center">
             {books.map((book, index) => (
-                <BookCard key={index} imgSrc={book.imgSrc} title={book.title} dlink={book.dlink}/>
+                <BookCard key={index} imgSrc={book.imgSrc} title={book.title} dlink={book.dlink} delay={100+(index*10)}/>
             ))}
             </div>
         </section>
