@@ -44,23 +44,23 @@ const staticYears: Year[] = [
 const staticEntries: Record<string, YearEntries> = {
   "1": {
     Secretariat: [
-      { id: "e1", name: "Image1", position: "Secretary General", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e2", name: "Image2", position: "Secretary General", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e3", name: "Image3", position: "Secretary General", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e4", name: "Image4", position: "Secretary General", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e5", name: "Image5", position: "Secretary General", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e1", name: "Image1", position: "Secretary General", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e2", name: "Image2", position: "Secretary General", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e3", name: "Image3", position: "Secretary General", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e4", name: "Image4", position: "Secretary General", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e5", name: "Image5", position: "Secretary General", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
     ],
     USG: [
-      { id: "e6", name: "Image2", position: "USG Finance", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e7", name: "Image2", position: "USG Finance", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e8", name: "Image2", position: "USG Finance", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e9", name: "Image2", position: "USG Finance", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e10", name: "Image2", position: "USG Finance", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e11", name: "Image2", position: "USG Finance", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
-      { id: "e12", name: "Image2", position: "USG Finance", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e6", name: "Image2", position: "USG Finance", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e7", name: "Image2", position: "USG Finance", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e8", name: "Image2", position: "USG Finance", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e9", name: "Image2", position: "USG Finance", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e10", name: "Image2", position: "USG Finance", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e11", name: "Image2", position: "USG Finance", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e12", name: "Image2", position: "USG Finance", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
     ],
     Other: [
-      { id: "e13", name: "Image3", position: "Design", driveFileID: "1SwIAfBE5lJhaWRMYoCxWdTG6XVxyVVw9", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
+      { id: "e13", name: "Image3", position: "Design", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
     ],
   },
   "2": {
