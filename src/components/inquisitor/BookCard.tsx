@@ -35,7 +35,7 @@ const BookCard: React.FC<BookCardProps> = ({ imgSrc, title, dlink, delay}) => {
             <div className="flex items-center justify-center gap-2 px-3">
                 <p className="w-1/2 text-slate-200">{title}</p>
                 <Link
-                href='/inquisitor/Newsletter_Issue18.0.pdf'
+                href={dlink}
                 download={true}
                 >
                     <TailwindButton text="Download" cls="px-3 text-xs md:text-base "/>
