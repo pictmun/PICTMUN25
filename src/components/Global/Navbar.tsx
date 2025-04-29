@@ -10,14 +10,6 @@ const Navbar = () => {
   const notice = "" //edit here to activate notice
   return (
     <nav className="bg-[#232A2F] shadow-lg fixed w-full z-50">
-      {notice && (
-        <div className="w-full bg-gold h-5" onMouseOver={()=>setOnMarquee(true)} onMouseOut={()=>setOnMarquee(false)} onTouchStart={()=>setOnMarquee(true)} onTouchEnd={()=>setOnMarquee(false)}>
-          <div className={` text-sm text-blue-dull font-playfair w-full font-bold flex gap-2`}>
-          {/* <div className={` text-sm text-blue-dull font-playfair w-full font-bold flex gap-2${!onMarquee ? 'animate-marquee': ''}`}> WITH MARQUEE */}
-            <p className="text-center w-full">{notice}</p>
-          </div>
-        </div>
-      )}
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
@@ -148,6 +140,14 @@ const Navbar = () => {
             >
               Sponsors
             </Link>
+          </div>
+        </div>
+      )}
+      {notice && (
+        <div className="w-full bg-gold h-5" onMouseOver={()=>setOnMarquee(true)} onMouseOut={()=>setOnMarquee(false)} onTouchStart={()=>setOnMarquee(true)} onTouchEnd={()=>setOnMarquee(false)}>
+          {/* <div className={` text-sm text-blue-dull font-playfair w-full font-bold flex gap-2`}> */}
+          <div className={` text-sm text-blue-dull font-playfair w-full font-bold flex gap-2 ${!onMarquee ? 'animate-marquee': ''}`}> 
+            <p className="text-center w-full">{notice}</p>
           </div>
         </div>
       )}

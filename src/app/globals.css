@@ -13,7 +13,7 @@
   --color-blue-dull: #232A2F;
   --color-gold: #e6ba63;
   --color-dull_gold: #C29B46;
-  --animate-marquee: marquee 10s linear infinite
+  --animate-marquee: marquee 20s linear infinite
 }
 
 @keyframes marquee {

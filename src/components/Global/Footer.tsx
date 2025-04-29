@@ -1,35 +1,31 @@
+import { IconBrandInstagram, IconBrandLinkedinFilled, IconBrandMedium } from "@tabler/icons-react"
+import Image from "next/image"
 import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#232A2F] text-white mt-8 border-t border-gray-700 pt-8 mx-6">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-lg font-playfair font-semibold mb-4">About Us</h3>
-            <p className="font-montserrat text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-playfair font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 font-montserrat text-sm">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
+    <footer className="bg-[#232A2F] text-white mt-8 border-t border-gray-700 pt-8 mx-6 font-playfair">
+      <div className="mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-around">
+          <div className="md:grow w-full text-left">
+            <h3 className="text-lg font-playfair font-semibold mb-2">Social Links</h3>
+            <Link target="_blank" href="https://www.instagram.com/pictmun/" className="flex items-center hover:text-gold">
+              <IconBrandInstagram />
+              <p className='text-lg hover:text-skin'>@pictmun</p>
+            </Link>
+            <Link target="_blank" href="https://www.linkedin.com/company/pict-model-united-nations/mycompany/" className="flex items-center hover:text-gold">
+              <IconBrandLinkedinFilled/>
+              <p  className='text-lg hover:text-skin'>@PICT Model United Nations</p>
+            </Link>
+            <Link target="_blank" href="https://medium.com/@pictmun" className="flex items-center hover:text-gold">
+              <IconBrandMedium />
+              <p className='text-lg hover:text-skin'>@pictmun</p>
+            </Link>
+          </div>   
+          <div className="w-fit text-right text-nowrap">
             <h3 className="text-lg font-playfair font-semibold mb-4">Contact Us</h3>
-            <p className="font-montserrat text-sm">123 Main St, Anytown, USA 12345</p>
-            <p className="font-montserrat text-sm">Email: info@example.com</p>
-            <p className="font-montserrat text-sm">Phone: (123) 456-7890</p>
+            <h1 className='text-lg'>Nirbhay Shah - <Link target="_blank" href="tel:+917020899506" className='text-lg  hover:text-gold hover:underline'>+917020899506</Link></h1>
+            <h1 className='text-lg'>Shloka Shetty - <Link target="_blank" href="tel:+917020899506" className='text-lg hover:text-gold hover:underline'>+918591605958</Link></h1>
           </div>
         </div>
       </div>
