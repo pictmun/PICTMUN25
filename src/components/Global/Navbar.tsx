@@ -9,7 +9,7 @@ const Navbar = () => {
   const [onMarquee, setOnMarquee] = useState(false)
   const notice = "" //edit here to activate notice
   return (
-    <nav className="bg-[#232A2F] shadow-lg fixed w-full z-50">
+    <nav className="bg-[#2e0f15] shadow-lg fixed w-full z-50">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">

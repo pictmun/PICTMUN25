@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${playfair.variable} ${montserrat.variable} flex flex-col min-h-screen bg-[#232A2F] `}>
         <Navbar/>
-        <main className="bg-[#153147]">
+        <main className="bg-[#70163c]">
           {children}
         </main>
         <Footer/>

@@ -10,7 +10,7 @@ const World = dynamic(() => import("./ui/globe").then((m) => m.World), {
 export function GithubGlobe() {
   const globeConfig = {
     pointSize: 1,
-    globeColor: "#232A2F",
+    globeColor: "#2e0f15",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,

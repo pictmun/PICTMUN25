@@ -9,11 +9,11 @@
 }
 
 @theme{
-  --color-blue-bg: #153147;
-  --color-blue-dull: #232A2F;
-  --color-gold: #e6ba63;
-  --color-dull_gold: #C29B46;
-  --animate-marquee: marquee 20s linear infinite
+  --color-blue-bg: #70163c;
+  --color-blue-dull: #2e0f15;
+  --color-gold: #e09f3e;
+  --color-dull_gold: #e09f3e;
+  --animate-marquee: marquee 20s linear infinite;
 }
 
 @keyframes marquee {

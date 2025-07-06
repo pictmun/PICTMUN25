@@ -24,8 +24,8 @@ const Footer = () => {
           </div>   
           <div className="w-fit text-right text-nowrap">
             <h3 className="text-lg font-playfair font-semibold mb-4">Contact Us</h3>
-            <h1 className='text-lg'>Nirbhay Shah - <Link target="_blank" href="tel:+917020899506" className='text-lg  hover:text-gold hover:underline'>+917020899506</Link></h1>
-            <h1 className='text-lg'>Shloka Shetty - <Link target="_blank" href="tel:+917020899506" className='text-lg hover:text-gold hover:underline'>+918591605958</Link></h1>
+            <h1 className='text-lg'>Aayush Meghal - <Link target="_blank" href="tel:+917020899506" className='text-lg  hover:text-gold hover:underline'>+919405417042</Link></h1>
+            <h1 className='text-lg'>Dhawal Talele - <Link target="_blank" href="tel:+917020899506" className='text-lg hover:text-gold hover:underline'>+919699086529</Link></h1>
           </div>
         </div>
       </div>
