@@ -36,9 +36,11 @@ interface categoryTitle {
 
 // STATIC DATA
 const staticYears: Year[] = [
-  { id: "1", name: 2023 },
-  { id: "2", name: 2022 },
-  { id: "3", name: 2021 },
+  { id: "1", name: 2025 },
+  { id: "2", name: 2024 },
+  { id: "3", name: 2023 },
+  { id: "4", name: 2022 },
+  { id: "5", name: 2021 },
 ];
 
 const staticEntries: Record<string, YearEntries> = {
@@ -51,7 +53,7 @@ const staticEntries: Record<string, YearEntries> = {
       { id: "e5", name: "Image5", position: "Chief Of Staff", driveFileID: "", linkedIn: "https://www.linkedin.com/in/tanishchaudhari/", Instagram: "https://www.instagram.com/tanishc228/" },
     ],
     USG: [
-      { id: "e6", name: "Image2", position: "USG Technical", driveFileID: "", linkedIn: "", Instagram: "" },
+      { id: "e6", name: "Image2", position: "USG Technical", driveFileID: "/images/team/Harsh_Dalvi.jpg", linkedIn: "", Instagram: "" },
       { id: "e7", name: "Image2", position: "USG Technical", driveFileID: "", linkedIn: "", Instagram: "" },
       { id: "e8", name: "Image2", position: "USG Outreach", driveFileID: "", linkedIn: "", Instagram: "" },
       { id: "e9", name: "Image2", position: "USG Outreach", driveFileID: "", linkedIn: "", Instagram: "" },

@@ -26,11 +26,16 @@ export const Card = React.memo(
       )}
     >
       <img
-        src={`https://drive.google.com/thumbnail?id=${card.driveFileID}&sz=w1000`}
-        referrerPolicy="no-referrer"
-        alt={card.name?.split('.')[0]}
-        className="object-cover absolute inset-0 h-full w-full"
-      />
+  src={
+    card.driveFileID.startsWith("/images/")
+      ? card.driveFileID
+      : `https://drive.google.com/thumbnail?id=${card.driveFileID}&sz=w1000`
+  }
+  referrerPolicy="no-referrer"
+  alt={card.name?.split('.')[0]}
+  className="object-cover absolute inset-0 h-full w-full"
+/>
+
       <div
         className={cn(
           "absolute inset-0 bg-black/50 flex items-end py-8 px-4 transition-opacity duration-300",

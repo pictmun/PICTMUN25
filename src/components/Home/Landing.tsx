@@ -16,14 +16,14 @@ const Landing = () => {
       >
         <div className="absolute z-20 h-fit w-full flex flex-col gap-4 justify-center items-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/3 font-playfair text-gold">
           <Image 
-            src={'/logos/golden-logo.webp'}
+            src={'/logos/logo2025.png'}
             height={250}
             width={250}
             alt="PICT MUN LOGO"
             className="md:block hidden"
           />
           <Image 
-            src={'/logos/golden-logo.webp'}
+            src={'/logos/logo2025.png'}
             height={150}
             width={150}
             alt="PICT MUN LOGO"
