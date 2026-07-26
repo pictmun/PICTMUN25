@@ -1,0 +1,89 @@
+PICTMUN26/
+├── .next/
+├── node_modules/
+├── public/
+│   ├── images/
+│   │   ├── about/
+│   │   ├── events/
+│   │   ├── home/
+│   │   ├── Inquisical/
+│   │   ├── bg_team.png
+│   │   ├── bg_pattern.png
+│   │   ├── golden_logo.png
+│   │   ├── home_bg.png
+│   │   └── logo.png
+│   ├── Inquisical/
+│   │   └── (Newsletter PDFs)
+│   └── logos/
+│       ├── golden_logo.webp
+│       └── logo_2025.png
+│
+├── src/
+│   ├── app/
+│   │   ├── about/
+│   │   │   └── page.tsx
+│   │   ├── API/
+│   │   │   └── gallery/
+│   │   │       └── route.ts
+│   │   ├── gallery/
+│   │   │   └── page.tsx
+│   │   ├── Inquisical/
+│   │   │   └── page.tsx
+│   │   ├── sponsors/
+│   │   │   └── page.tsx
+│   │   ├── team/
+│   │   │   └── page.tsx
+│   │   ├── timeline/
+│   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── about/
+│   │   │   ├── events/
+│   │   │   │   └── EventSection.tsx
+│   │   │   ├── ClubSectionection.tsx
+│   │   │   └── OrgSection.tsx
+│   │   ├── gallery/
+│   │   │   └── GalleryPage.tsx
+│   │   ├── global/
+│   │   │   ├── Footer.tsx
+│   │   │   └── Navbar.tsx
+│   │   ├── home/
+│   │   │   ├── AboutClub.tsx
+│   │   │   ├── HomePageHighlights.tsx
+│   │   │   ├── Landing.tsx
+│   │   │   ├── OurNewsletter.tsx
+│   │   │   ├── Testimonials.tsx
+│   │   ├── Inquisical/
+│   │   │   └── bookmark.tsx
+│   │   ├── sponsors/
+│   │   │   └── sponsor-cards.tsx
+│   │   ├── team/
+│   │   │   └── team-gallery.tsx
+│   │   ├── UI/
+│   │   │   ├── focus-cards.tsx
+│   │   │   ├── globe.tsx
+│   │   │   ├── images-slider.tsx
+│   │   │   ├── tailwindcss-button.tsx
+│   │   │   ├── timeline.tsx
+│   │   │   └── Vortex.tsx
+│   │   └── githubGlobe.tsx
+│   │
+│   ├── data/
+│   │   └── global.json
+│   │
+│   └── lib/
+│       └── utils.ts
+│
+├── .gitignore
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json

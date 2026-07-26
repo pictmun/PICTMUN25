@@ -4,6 +4,9 @@ import { ImagesSlider } from "../ui/images-slider";
 
 const OurNewsletter = () => {
   const images = [
+    'images/inquisitor/Issue21.png',
+    'images/inquisitor/Issue20.png',
+    'images/inquisitor/Issue19.png',
     'images/inquisitor/Issue18.png',
     'images/inquisitor/Issue17.jpeg',
     'images/inquisitor/Issue16.jpg',
