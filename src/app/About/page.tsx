@@ -6,25 +6,24 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="min-h-screen overflow-x-hidden font-playfair">
-      <div className="h-[50vh] relative pt-24">
-        <h1 className="text-center text-gold text-4xl lg:text-5xl relative font-bold">
+      <div className="h-[45vh] sm:h-[50vh] relative pt-24">
+        <h1 className="text-center text-gold text-3xl sm:text-4xl lg:text-5xl relative font-bold">
           About the Club
         </h1>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 xl:-translate-y-1/12 z-20">
           <Image
-            src={"/logos/logo2026.png"}
-            height={250}
-            width={250}
-            alt="PICT MUN LOGO"
-            className="xl:block hidden"
-          />
-          <Image
-            src={"/logos/logo2026.png"}
-            height={250}
-            width={250}
-            alt="PICT MUN LOGO"
-            className="xl:hidden block"
-          />
+  src="/logos/logo2026.png"
+  width={250}
+  height={250}
+  alt="PICT MUN LOGO"
+  className="
+    w-36 sm:w-40 md:w-44 xl:w-48
+    h-auto
+    translate-y-4
+    sm:translate-y-6
+    md:translate-y-8
+  "
+/>
         </div>
       </div>
       <div className="relative bg-blue-dull">

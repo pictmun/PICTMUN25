@@ -22,25 +22,24 @@ const Landing = () => {
 
         {/* Hero Content */}
         <div
-          className="
-  absolute
-  z-20
-  w-full
-  flex
-  flex-col
-  items-center
-  justify-center
-  px-4
-  left-1/2
-  -translate-x-1/2
-  -translate-y-1/2
+  className="
+    absolute
+    z-20
+    w-full
+    flex
+    flex-col
+    items-center
+    justify-start
+    px-4
+    left-1/2
+    -translate-x-1/2
 
-  top-[32%]
-  sm:top-[40%]
-  md:top-[42%]
-  lg:top-[43%]
-"
-        >
+    top-24
+    sm:top-28
+    md:top-32
+    lg:top-36
+  "
+>
 
           {/* Logo */}
           <Image
@@ -55,8 +54,6 @@ const Landing = () => {
   lg:w-44
   xl:w-52
   h-auto
-  translate-y-0
-  sm:translate-y-5
   -translate-x-1
 "
           />
@@ -65,17 +62,16 @@ const Landing = () => {
           {/* Text + Button Group */}
           <div
   className="
-    flex
-    flex-col
-    items-center
-    gap-2
-    sm:gap-3
-    md:gap-4
-
-    -translate-y-1
-    sm:-translate-y-5
-    md:-translate-y-10
-  "
+  flex
+  flex-col
+  items-center
+  gap-3
+  sm:gap-4
+  md:gap-5
+  mt-4
+  sm:mt-5
+  md:mt-6
+"
 >
 
             <p
