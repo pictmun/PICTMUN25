@@ -8,9 +8,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [onMarquee, setOnMarquee] = useState(false);
   const notice =
-    "🚨 Priority Registration for PICTMUN'25 is Now Live! Secure Your Spot Today 🚨";
+    "";
   return (
-    <nav className="bg-[#2e0f15] shadow-lg fixed w-full z-50">
+    <nav className="fixed w-full z-50 bg-deep-emerald/90 backdrop-blur-md border-b border-antique-gold/20 shadow-xl">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">

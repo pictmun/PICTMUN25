@@ -1,23 +1,24 @@
 "use client";
-import React from "react";
+import React, { useMemo } from "react";
 import { motion } from "motion/react";
 import dynamic from "next/dynamic";
+
 
 const World = dynamic(() => import("./ui/globe").then((m) => m.World), {
   ssr: false,
 });
 
-export function GithubGlobe() {
-  const globeConfig = {
+function GithubGlobeComponent() {
+  const globeConfig = useMemo(() => ({
     pointSize: 1,
-    globeColor: "#2e0f15",
+    globeColor: "#174A3A",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
-    emissive: "#062056",
+    emissive: "#0B2B26",
     emissiveIntensity: 0.1,
     shininess: 0.9,
-    polygonColor: "#e6ba63",
+    polygonColor: "#A67C52",
     ambientLight: "#FFFFFF",
     directionalLeftLight: "#ffffff",
     directionalTopLight: "#ffffff",
@@ -29,9 +30,13 @@ export function GithubGlobe() {
     initialPosition: { lat: 77.837450799474553, lng: 35.494009507787759 },
     autoRotate: true,
     autoRotateSpeed: 0.5,
-  };
-  const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
-  const sampleArcs = [
+  }), []);
+  const colors = [
+  "#A67C52", // Antique Gold
+  "#D6B17D", // Light Gold
+  "#F2E9DB", // Warm Ivory
+];
+  const sampleArcs = useMemo(() => ([
     {
       order: 1,
       startLat: -19.885592,
@@ -392,7 +397,7 @@ export function GithubGlobe() {
       arcAlt: 0.3,
       color: colors[Math.floor(Math.random() * (colors.length - 1))],
     },
-  ];
+  ]), []);
 
   return (
     <div className="w-full relative h-screen">
@@ -411,9 +416,11 @@ export function GithubGlobe() {
         className="div"
       >
       </motion.div>
-      <div className="absolute w-full h-full md:h-[200vh] z-10 transform translate-y-1/2 md:translate-y-1/5">
-        <World data={sampleArcs} globeConfig={globeConfig} />
-      </div>
+      <div className="absolute inset-0 w-full h-[250%] z-10 overflow-hidden">
+      <World data={sampleArcs} globeConfig={globeConfig} />
+    </div>
     </div>
   );
 }
+
+export const GithubGlobe = React.memo(GithubGlobeComponent);

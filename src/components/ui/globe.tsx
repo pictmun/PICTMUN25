@@ -231,7 +231,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     };
   }, [isInitialized, data]);
 
-  return <group ref={groupRef} />;
+  return <group ref={groupRef} position={[0, -40, 0]} />;
 }
 
 export function WebGLRendererConfig() {
@@ -240,7 +240,7 @@ export function WebGLRendererConfig() {
   useEffect(() => {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
-    gl.setClearColor(0xffaaff, 0);
+    gl.setClearColor("#174A3A", 1);
   }, []);
 
   return null;
@@ -248,8 +248,10 @@ export function WebGLRendererConfig() {
 
 export function World(props: WorldProps) {
   const { globeConfig } = props;
+  
   const scene = new Scene();
-  scene.fog = new Fog(0xffffff, 400, 2000);
+  scene.background = new Color("#174A3A"); 
+  scene.fog = new Fog("#174A3A", 400, 2000);
   return (
     <Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
       <WebGLRendererConfig />

@@ -8,11 +8,18 @@
   font-family: var(--font-montserrat), sans-serif;
 }
 
-@theme{
-  --color-blue-bg: #70163c;
-  --color-blue-dull: #2e0f15;
-  --color-gold: #e09f3e;
-  --color-dull_gold: #e09f3e;
+@theme {
+  --color-blue-bg: #174A3A;      /* Rich Emerald */
+  --color-blue-dull: #0B2B26;    /* Deep Midnight Emerald */
+  --color-gold: #A67C52;         /* Antique Gold */
+  --color-dull_gold: #A67C52;
+
+  --color-rich-emerald: #174A3A;
+  --color-deep-emerald: #0B2B26;
+  --color-warm-ivory: #F2E9DB;
+  --color-antique-gold: #A67C52;
+  --color-deep-wine: #702F3B;
+
   --animate-marquee: marquee 20s linear infinite;
 }
 

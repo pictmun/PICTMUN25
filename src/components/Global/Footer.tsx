@@ -47,23 +47,23 @@ const Footer = () => {
               Contact Us
             </h3>
             <h1 className="text-lg">
-              Aayush Meghal -{" "}
+              Tanvi Ghatage -{" "}
               <Link
                 target="_blank"
-                href="tel:+919405417042"
+                href="tel:+91 9895320128"
                 className="text-lg  hover:text-gold hover:underline"
               >
-                +919405417042
+                +91 9895320128
               </Link>
             </h1>
             <h1 className="text-lg">
-              Dhawal Talele -{" "}
+              Anant Garg -{" "}
               <Link
                 target="_blank"
-                href="tel:+919699086529"
+                href="tel:+91 9168258910"
                 className="text-lg hover:text-gold hover:underline"
               >
-                +919699086529
+                +91 9168258910
               </Link>
             </h1>
           </div>

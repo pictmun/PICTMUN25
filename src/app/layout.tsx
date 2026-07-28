@@ -20,13 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${playfair.variable} ${montserrat.variable} flex flex-col min-h-screen bg-[#232A2F] `}>
-        <Navbar/>
-        <main className="bg-[#70163c]">
-          {children}
-        </main>
-        <Footer/>
-      </body>
+      <body
+  className={`${inter.className} ${playfair.variable} ${montserrat.variable} flex flex-col min-h-screen bg-rich-emerald`}
+>
+  <Navbar />
+  <main className="bg-rich-emerald">
+    {children}
+  </main>
+  <Footer />
+</body>
     </html>
   );
 }
