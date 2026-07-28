@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-rich-emerald">
       <body
   className={`${inter.className} ${playfair.variable} ${montserrat.variable} flex flex-col min-h-screen bg-rich-emerald`}
 >

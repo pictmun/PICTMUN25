@@ -59,7 +59,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-gold">
                 {item.title}
               </h3>
-              {item.content}{" "}
+              <React.Fragment key={item.title}>
+  {item.content}
+</React.Fragment>
             </div>
           </div>
         ))}

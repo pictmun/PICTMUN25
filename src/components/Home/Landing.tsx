@@ -19,39 +19,127 @@ const Landing = () => {
         baseHue={150}
         className="relative flex h-screen w-screen items-center justify-end flex-col overflow-hidden"
       >
-        <div className="absolute z-20 h-fit w-full flex flex-col gap-4 justify-center items-center top-[42%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-playfair text-gold">
-          <Image
-            src={"/logos/logo2025.png"}
-            height={200}
-            width={200}
-            alt="PICT MUN LOGO"
-            className="md:block hidden"
-          />
-          <Image
-            src={"/logos/logo2025.png"}
-            height={100}
-            width={100}
-            alt="PICT MUN LOGO"
-            className="md:hidden block"
-          />
-          <p className="text-5xl md:text-8xl pointer-events-none">PICT MUN</p>
-          <p className="text-xl md:text-3xl pointer-events-none">
-            Think • Discuss • Prosper
-          </p>
 
-          <TailwindButton
-            text="Register"
-            cls="px-8 py-1"
-            onClick={() => setShowRegisterModal(true)}
-            aria-label="Open registration teaser"
+        {/* Hero Content */}
+        <div
+          className="
+  absolute
+  z-20
+  w-full
+  flex
+  flex-col
+  items-center
+  justify-center
+  px-4
+  left-1/2
+  -translate-x-1/2
+  -translate-y-1/2
+
+  top-[32%]
+  sm:top-[40%]
+  md:top-[42%]
+  lg:top-[43%]
+"
+        >
+
+          {/* Logo */}
+          <Image
+            src="/logos/logo2026.png"
+            width={220}
+            height={220}
+            alt="PICT MUN LOGO"
+            className="
+  w-50
+  sm:w-32
+  md:w-40
+  lg:w-44
+  xl:w-52
+  h-auto
+  translate-y-0
+  sm:translate-y-5
+  -translate-x-1
+"
           />
+
+
+          {/* Text + Button Group */}
+          <div
+  className="
+    flex
+    flex-col
+    items-center
+    gap-2
+    sm:gap-3
+    md:gap-4
+
+    -translate-y-1
+    sm:-translate-y-5
+    md:-translate-y-10
+  "
+>
+
+            <p
+              className="
+                pointer-events-none
+                text-5xl
+                sm:text-4xl
+                md:text-5xl
+                lg:text-6xl
+                xl:text-7xl
+                font-playfair
+                text-center
+                leading-tight
+                text-gold
+              "
+            >
+              PICT MUN
+            </p>
+
+
+            <p
+              className="
+                pointer-events-none
+                text-base
+                sm:text-base
+                md:text-lg
+                lg:text-xl
+                xl:text-2xl
+                text-center
+                px-4
+                text-gold
+              "
+            >
+              Think • Discuss • Prosper
+            </p>
+
+
+            <TailwindButton
+              text="Register"
+              cls="
+px-5 py-1.5 text-xs
+sm:px-6 sm:py-2 sm:text-sm
+md:text-base
+"
+              onClick={() => setShowRegisterModal(true)}
+              aria-label="Open registration teaser"
+            />
+
+          </div>
+
+
         </div>
 
+
+        {/* Globe */}
         <GithubGlobe />
+
       </Vortex>
 
+
       {showRegisterModal && (
-        <RegisterLoadingModal onClose={() => setShowRegisterModal(false)} />
+        <RegisterLoadingModal
+          onClose={() => setShowRegisterModal(false)}
+        />
       )}
     </>
   );
