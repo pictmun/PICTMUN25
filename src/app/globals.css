@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Define root fallback font variables if Next.js font loader isn't passing them */
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
 .font-playfair {
   font-family: var(--font-playfair), serif;
 }
@@ -9,20 +15,19 @@
 }
 
 @theme {
-  --color-blue-bg: #174A3A;      /* Rich Emerald */
-  --color-blue-dull: #0B2B26;    /* Deep Midnight Emerald */
-  --color-gold: #A67C52;         /* Antique Gold */
-  --color-dull_gold: #A67C52;
+  --color-blue-bg: #174A3A;
+  --color-blue-dull: #0B2B26;
+  --color-gold: #A67C52;
+  --color-dull-gold: #A67C52;
 
   --color-rich-emerald: #174A3A;
   --color-deep-emerald: #0B2B26;
   --color-warm-ivory: #F2E9DB;
   --color-antique-gold: #A67C52;
   --color-deep-wine: #702F3B;
-
-  --animate-marquee: marquee 20s linear infinite;
 }
 
+/* Keyframes & Animations */
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -32,27 +37,25 @@
   }
 }
 
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
+
+/* Custom Swiper / Slider Bullets */
 .custom-bullet {
   background-color: #e6ba63 !important;
   opacity: 0.5;
 }
+
 .custom-bullet-active {
   background-color: #e6ba63 !important;
   opacity: 1;
 }
 
-
-.animate-marquee {
-  animation: marquee 15s linear infinite;
-}
-
-html,
-body {
-  background-color: #174A3A !important;
-}
+/* Global Reset & Base Layout */
 html,
 body,
 #__next {
   background-color: #174A3A !important;
-  min-height: 100%;
+  min-height: 100vh;
 }
