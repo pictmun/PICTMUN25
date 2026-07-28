@@ -400,7 +400,7 @@ function GithubGlobeComponent() {
   ]), []);
 
   return (
-    <div className="w-full relative h-screen">
+    <div className="relative w-full h-screen overflow-hidden">
       <motion.div
         initial={{
           opacity: 0,
@@ -416,7 +416,24 @@ function GithubGlobeComponent() {
         className="div"
       >
       </motion.div>
-      <div className="absolute inset-0 w-full h-[250%] z-10 overflow-hidden">
+      <div
+  className="
+    absolute
+    inset-x-0
+    overflow-hidden
+    z-10
+
+    top-0
+    sm:top-4
+    md:top-10
+    lg:top-[20px]
+
+    h-[160%]
+    sm:h-[190%]
+    md:h-[220%]
+    lg:h-[250%]
+  "
+>
       <World data={sampleArcs} globeConfig={globeConfig} />
     </div>
     </div>

@@ -12,14 +12,14 @@ const Page = () => {
         </h1>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 xl:-translate-y-1/12 z-20">
           <Image
-            src={"/logos/logo2025.png"}
+            src={"/logos/logo2026.png"}
             height={250}
             width={250}
             alt="PICT MUN LOGO"
             className="xl:block hidden"
           />
           <Image
-            src={"/logos/logo2025.png"}
+            src={"/logos/logo2026.png"}
             height={250}
             width={250}
             alt="PICT MUN LOGO"
