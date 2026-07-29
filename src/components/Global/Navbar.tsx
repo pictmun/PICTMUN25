@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [onMarquee, setOnMarquee] = useState(false);
   const notice =
-    "";
+    "🚨 SAVE THE DATES 🚨 | PICT MUN 2026 | 📅 31st October – 1st November | Think • Discuss • Prosper 🌍";
   return (
     <nav className="fixed w-full z-50 bg-deep-emerald/90 backdrop-blur-md border-b border-antique-gold/20 shadow-xl">
       <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -156,10 +156,10 @@ const Navbar = () => {
           onTouchEnd={() => setOnMarquee(false)}
         >
           <div
-            className={`whitespace-nowrap text-sm text-blue-dull font-playfair font-bold w-full ${
-              !onMarquee ? "animate-marquee" : ""
-            }`}
-          >
+  className={`whitespace-nowrap text-sm text-[#F2E9DB] font-playfair font-bold w-full ${
+    !onMarquee ? "animate-marquee" : ""
+  }`}
+>
             <p className="px-4">{notice}</p>
           </div>
         </div>
