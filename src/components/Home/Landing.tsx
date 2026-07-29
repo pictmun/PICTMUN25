@@ -1,14 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GithubGlobe } from "../githubGlobe";
 import TailwindButton from "../ui/tailwindcss-button";
 import { Vortex } from "../ui/Vortex";
 import Image from "next/image";
 import RegisterLoadingModal from "./registerLoadingModal";
+import AnnouncementModal from "./AnnouncementModal";
+
+
 
 const Landing = () => {
   const [showRegisterModal, setShowRegisterModal] = useState(false);
+
+  const [showAnnouncement, setShowAnnouncement] = useState(false);
+
+  useEffect(() => {
+  setShowAnnouncement(true);
+  }, []);
 
   return (
     <>
@@ -132,11 +141,17 @@ md:text-base
       </Vortex>
 
 
-      {showRegisterModal && (
-        <RegisterLoadingModal
-          onClose={() => setShowRegisterModal(false)}
-        />
-      )}
+      {showAnnouncement && (
+  <AnnouncementModal
+    onClose={() => setShowAnnouncement(false)}
+  />
+)}
+
+{showRegisterModal && (
+  <RegisterLoadingModal
+    onClose={() => setShowRegisterModal(false)}
+  />
+)}
     </>
   );
 };
