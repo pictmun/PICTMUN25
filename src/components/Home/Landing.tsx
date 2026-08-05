@@ -5,7 +5,7 @@ import { GithubGlobe } from "../githubGlobe";
 import TailwindButton from "../ui/tailwindcss-button";
 import { Vortex } from "../ui/Vortex";
 import Image from "next/image";
-import RegisterLoadingModal from "./registerLoadingModal";
+import RegistrationModal from "./RegistrationModal";
 import AnnouncementModal from "./AnnouncementModal";
 
 
@@ -148,7 +148,7 @@ md:text-base
 )}
 
 {showRegisterModal && (
-  <RegisterLoadingModal
+  <RegistrationModal
     onClose={() => setShowRegisterModal(false)}
   />
 )}
