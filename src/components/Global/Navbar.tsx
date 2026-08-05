@@ -7,8 +7,9 @@ import Image from "next/image";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [onMarquee, setOnMarquee] = useState(false);
-  const notice =
+  const notice1 =
     "🚨 SAVE THE DATES 🚨 | PICT MUN 2026 | 📅 31st October – 1st November | Think • Discuss • Prosper 🌍";
+  const notice2 = "🚨 PRIORITY DELEGATE & EXECUTIVE BOARD REGISTRATIONS ARE NOW LIVE! 🚨 Apply today and be part of PICT MUN 2026! 🌍";
   return (
     <nav className="fixed w-full z-50 bg-deep-emerald/90 backdrop-blur-md border-b border-antique-gold/20 shadow-xl">
       <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -147,23 +148,42 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      {notice && (
-        <div
-          className="w-full bg-gold overflow-hidden h-7 flex items-center"
-          onMouseOver={() => setOnMarquee(true)}
-          onMouseOut={() => setOnMarquee(false)}
-          onTouchStart={() => setOnMarquee(true)}
-          onTouchEnd={() => setOnMarquee(false)}
-        >
+      <div className="w-full flex flex-col">
+        {notice1 && (
           <div
-  className={`whitespace-nowrap text-sm text-[#F2E9DB] font-playfair font-bold w-full ${
-    !onMarquee ? "animate-marquee" : ""
-  }`}
->
-            <p className="px-4">{notice}</p>
+            className="w-full bg-gold overflow-hidden h-7 flex items-center border-b border-antique-gold/20"
+            onMouseOver={() => setOnMarquee(true)}
+            onMouseOut={() => setOnMarquee(false)}
+            onTouchStart={() => setOnMarquee(true)}
+            onTouchEnd={() => setOnMarquee(false)}
+          >
+            <div
+              className={`whitespace-nowrap text-sm text-[#F2E9DB] font-playfair font-bold w-full ${
+                !onMarquee ? "animate-marquee" : ""
+              }`}
+            >
+              <p className="px-4">{notice1}</p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+        {notice2 && (
+          <div
+            className="w-full bg-gold overflow-hidden h-7 flex items-center"
+            onMouseOver={() => setOnMarquee(true)}
+            onMouseOut={() => setOnMarquee(false)}
+            onTouchStart={() => setOnMarquee(true)}
+            onTouchEnd={() => setOnMarquee(false)}
+          >
+            <div
+              className={`whitespace-nowrap text-sm text-[#F2E9DB] font-playfair font-bold w-full ${
+                !onMarquee ? "animate-marquee" : ""
+              }`}
+            >
+              <p className="px-4">{notice2}</p>
+            </div>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };
